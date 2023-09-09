@@ -3,7 +3,7 @@ title: "Path Tracing"
 date: 2023-08-09T21:12:53+09:00
 description: "光のリアルタイムなシミュレーション"
 image: "./img/PathTracing/PathTracing_title.jpg"
-draft: false
+draft: true
 ---
 <div align="right">83rd 0x4C</div>
 
