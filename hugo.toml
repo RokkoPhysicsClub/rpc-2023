@@ -56,20 +56,19 @@ publishDir = "docs"
   url = "links/"
 
   [[params.navlinks]]
-  name = "Members"
-  url = "members/"
-
-   [[params.navlinks]]
   name = "Afterword"
   url = "afterword/"
 
   [[params.navlinks]]
-  name = "About"
-  url = "about/"
+  name = "Separate"
 
   [[params.navlinks]]
-  name = "Search"
-  url = "search/"
+  name = "Members"
+  url = "members/"
+
+  [[params.navlinks]]
+  name = "About"
+  url = "about/"
 
   [params.social]
   #facebook      = "full page or profile url in facebook"

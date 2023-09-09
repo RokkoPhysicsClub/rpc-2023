@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>六甲学院物理部2023</title>
+    <link>https://rokkophysicsclub.github.io/rpc-2023/</link>
+    <description>Recent content on 六甲学院物理部2023</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 09 Aug 2023 21:12:53 +0900</lastBuildDate><atom:link href="https://rokkophysicsclub.github.io/rpc-2023/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Path Tracing</title>
+      <link>https://rokkophysicsclub.github.io/rpc-2023/works/pathtracing/</link>
+      <pubDate>Wed, 09 Aug 2023 21:12:53 +0900</pubDate>
+      
+      <guid>https://rokkophysicsclub.github.io/rpc-2023/works/pathtracing/</guid>
+      <description>83rd 0x4C はじめに 最近、PS5ではレイトレーシングができるとか真のレイトレーシングモードとかの話題を聞きますよね。 なので、今回は真のレイトレーシン</description>
+    </item>
+    
+    <item>
+      <title>Links</title>
+      <link>https://rokkophysicsclub.github.io/rpc-2023/links/</link>
+      <pubDate>Wed, 09 Aug 2023 17:55:28 +0900</pubDate>
+      
+      <guid>https://rokkophysicsclub.github.io/rpc-2023/links/</guid>
+      <description>今回の文化祭で発表された作品などのリンクです。</description>
+    </item>
+    
+    <item>
+      <title>Welcome</title>
+      <link>https://rokkophysicsclub.github.io/rpc-2023/welcome/</link>
+      <pubDate>Wed, 09 Aug 2023 17:47:07 +0900</pubDate>
+      
+      <guid>https://rokkophysicsclub.github.io/rpc-2023/welcome/</guid>
+      <description>六甲学院物理部 2023年度文化祭ホームページへようこそ enter your text here 部長 83期 kusa51 部誌 部誌はこちら 学年表記について 期 学年 81 高校3年生 82 高校2年生 83 高</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://rokkophysicsclub.github.io/rpc-2023/afterword/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rokkophysicsclub.github.io/rpc-2023/afterword/</guid>
+      <description>Afterword </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -52,7 +52,7 @@ section.background-secondary {
 }
 .italic {
   font-style: italic;
-  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  font-family: "Georgia", "Times New Roman", Times, serif;
 }
 .img-responsive {
   margin: 0 auto;
@@ -98,7 +98,7 @@ section.background-secondary {
   color: #555555;
 }
 .text-gray-light {
-  color: #505050;
+  color: #999999;
 }
 .text-gray-lighter {
   color: #cdcdcd;
@@ -330,7 +330,7 @@ SIDEBAR + RIGHT COLUMN
   }
 }
 .sidebar-heading {
-  font-size: 22px;
+  font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
@@ -347,8 +347,8 @@ SIDEBAR + RIGHT COLUMN
   text-decoration: none;
 }
 .sidebar-p {
-  color: #505050;
-  font-size: 16px;
+  color: #999999;
+  font-size: 14px;
 }
 .sidebar-menu {
   list-style-type: none;
@@ -365,7 +365,7 @@ SIDEBAR + RIGHT COLUMN
   font-family: 'FontAwesome';
   content: '\f105';
   margin: 0 5px 0 -15px;
-  color: #505050;
+  color: #999999;
 }
 .sidebar-menu li.active a {
   color: #2065a1;
@@ -408,7 +408,7 @@ SIDEBAR + RIGHT COLUMN
 }
 .content-column-content p,
 .content-column-content li {
-  color: #505050;
+  color: #999999;
 }
 .content-column-content ul li {
   list-style-type: none;
@@ -505,7 +505,7 @@ SERVICES / INTEGRATIONS
   letter-spacing: 0.1em;
   font-size: 18px;
   font-weight: 400;
-  color: #505050;
+  color: #999999;
   margin-bottom: 40px;
 }
 .services .heading {
@@ -526,7 +526,7 @@ SERVICES / INTEGRATIONS
   font-size: 14px;
   line-height: 1.5;
   margin-bottom: 60px;
-  color: #505050;
+  color: #999999;
 }
 /*
 =====================
@@ -587,8 +587,8 @@ p.social a {
   font-size: 15px;
   text-align: center;
   vertical-align: bottom;
-  border: solid 1px #505050;
-  color: #505050;
+  border: solid 1px #999999;
+  color: #999999;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
@@ -652,14 +652,14 @@ COPYRIGHT
 =====================
 */
 .copyright {
-  color: #505050;
+  color: #999999;
   font-size: 13px;
 }
 .copyright p.credit {
   margin-bottom: 10px;
 }
 .copyright p.credit a {
-  color: #505050;
+  color: #999999;
 }
 @media (max-width: 991px) {
   .copyright p.credit {
@@ -703,7 +703,7 @@ ABOUT
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #505050;
+  color: #999999;
   font-size: 12px;
 }
 .progress-bar-skill1 {
@@ -857,7 +857,7 @@ a:active {
   padding: 15px 20px 15px;
 }
 .box-masonry .box-masonry-text p {
-  color: #505050;
+  color: #999999;
   font-size: 14px;
 }
 .box-masonry .box-masonry-hover-text-header {
@@ -969,7 +969,7 @@ a:active {
   color: #555555;
 }
 .box-simple p {
-  color: #505050;
+  color: #999999;
 }
 .box-simple:hover .icon {
   -webkit-transform: scale(1.1, 1.1);
@@ -983,7 +983,7 @@ a:active {
 }
 .box-simple.box-white {
   padding: 20px;
-  border: dotted 1px #505050;
+  border: dotted 1px #999999;
 }
 .box-simple.box-white .icon {
   color: #555555;
@@ -992,7 +992,7 @@ a:active {
 }
 .box-simple.box-dark {
   padding: 20px;
-  border: dotted 1px #505050;
+  border: dotted 1px #999999;
   background: #555555;
   color: #fff;
 }
@@ -1170,7 +1170,7 @@ a:active {
   letter-spacing: 0.08em;
 }
 .box-image-text .content p {
-  color: #505050;
+  color: #999999;
 }
 .box-image-text.bg-visible .bg {
   opacity: 0.8;
@@ -1237,11 +1237,11 @@ STYLE SWITCHER FOR DEMO
   background-color: #cdcdcd;
 }
 .nav > li.disabled > a {
-  color: #505050;
+  color: #999999;
 }
 .nav > li.disabled > a:hover,
 .nav > li.disabled > a:focus {
-  color: #505050;
+  color: #999999;
 }
 .nav .open > a,
 .nav .open > a:hover,
@@ -1577,14 +1577,14 @@ STYLE SWITCHER FOR DEMO
 /* modal */
 .modal-content {
   background-color: #ffffff;
-  border: 1px solid #505050;
+  border: 1px solid #999999;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0;
 }
 /* scaffolding */
 body {
-  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;
-  font-size: 17px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 16px;
   line-height: 1.55;
   color: #000000;
   background-color: #f4f4f4;
@@ -1646,7 +1646,7 @@ hr {
   color: #cccccc;
 }
 .breadcrumb > .active {
-  color: #505050;
+  color: #999999;
 }
 .breadcrumb a {
   color: #2065a1;
@@ -1807,14 +1807,14 @@ label {
   box-shadow: none;
 }
 .form-control::-moz-placeholder {
-  color: #505050;
+  color: #999999;
   opacity: 1;
 }
 .form-control:-ms-input-placeholder {
-  color: #505050;
+  color: #999999;
 }
 .form-control::-webkit-input-placeholder {
-  color: #505050;
+  color: #999999;
 }
 .form-control:focus {
   border-color: #2065a1;
@@ -1855,7 +1855,7 @@ label {
 .pager .disabled > a:hover,
 .pager .disabled > a:focus,
 .pager .disabled > span {
-  color: #505050;
+  color: #999999;
   background-color: #ffffff;
   border-color: #ddd;
 }
@@ -1910,7 +1910,7 @@ label {
 .pagination > .disabled > a,
 .pagination > .disabled > a:hover,
 .pagination > .disabled > a:focus {
-  color: #505050;
+  color: #999999;
   background-color: #ffffff;
   border-color: #dddddd;
 }
@@ -1948,22 +1948,22 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 700;
   line-height: 1.2;
   color: #000000;
 }
 h1,
 .h1 {
-  font-size: 38px;
+  font-size: 48px;
 }
 h2,
 .h2 {
-  font-size: 28px;
+  font-size: 38px;
 }
 h3,
 .h3 {
-  font-size: 22px;
+  font-size: 32px;
   font-weight: 700;
 }
 h4,
@@ -2026,7 +2026,7 @@ a.bg-primary:hover {
 }
 abbr[title],
 abbr[data-original-title] {
-  border-bottom: 1px dotted #505050;
+  border-bottom: 1px dotted #999999;
 }
 blockquote {
   padding: 12px 24px;
@@ -2040,7 +2040,7 @@ blockquote .small {
   display: block;
   font-size: 80%;
   line-height: 1.55;
-  color: #505050;
+  color: #999999;
 }
 blockquote footer:before,
 blockquote small:before,
@@ -2111,27 +2111,4 @@ a.list-group-item.active > .badge,
 }
 .nav-pills > li > a > .badge {
   margin-left: 3px;
-}
-
-
-/*-----------------------------*/
-table {
-  border-collapse:  collapse; /* セルの線を重ねる */
-  margin: 30px 5px;
-}
- 
-tr:nth-child(odd) {
-  background-color:  #ddd;    /* 背景色指定 */
-}
- 
-th,td {
-  padding: 5px 10px;          /* 余白指定 */
-}
-
-.content-column-content img {
-  padding: 5px 5px;
-}
-
-li.link-separator {
-  border: #000;
 }
