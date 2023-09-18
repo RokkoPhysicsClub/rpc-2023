@@ -6,12 +6,15 @@ draft: false
 
 ## 六甲学院物理部 2023年度文化祭ホームページへようこそ
 
+![Title_image](../img/title.jpg)
 enter your text here
 <div align="right">部長 83期 kusa51</div>
 
 
 ## 部誌
-部誌はこちら
+今年のホームページでは、気になる内容について研究している部員についてより知ってもらえるようSNSなどのアカウントを記載した[Members](../members/)というページを用意しています。<br>
+常識の範囲内で是非活用してください。<br>
+部誌はこちら↓
 {{< link-card "../works" "Works">}}
 
 ## 学年表記について

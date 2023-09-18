@@ -6,7 +6,79 @@
     <description>Recent content in Works on 六甲学院物理部2023</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 09 Aug 2023 21:12:53 +0900</lastBuildDate><atom:link href="https://rokkophysicsclub.github.io/rpc-2023/works/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Sep 2023 16:52:23 +0900</lastBuildDate><atom:link href="https://rokkophysicsclub.github.io/rpc-2023/works/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>阪急神戸線各駅発車案内</title>
+      <link>https://rokkophysicsclub.github.io/rpc-2023/works/train/</link>
+      <pubDate>Sun, 17 Sep 2023 16:52:23 +0900</pubDate>
+      
+      <guid>https://rokkophysicsclub.github.io/rpc-2023/works/train/</guid>
+      <description>83rd rkgpc83anto 概要 僕が作った作品は、他の物理部員作っているゲーム・展示とは異なり「サイト」です。 なので上のQRコードを読み取っていただければ皆様のお使</description>
+    </item>
+    
+    <item>
+      <title>フリフリ☆炭酸！！</title>
+      <link>https://rokkophysicsclub.github.io/rpc-2023/works/tansan/</link>
+      <pubDate>Fri, 15 Sep 2023 21:15:05 +0900</pubDate>
+      
+      <guid>https://rokkophysicsclub.github.io/rpc-2023/works/tansan/</guid>
+      <description>84th nameko 自作ゲーム「フリフリ☆炭酸！！」を紹介します。 どんなゲーム？ 一台のパソコンでマルチプレイができる新しい（？）ゲームです。 はじめに缶ロケッ</description>
+    </item>
+    
+    <item>
+      <title>Moon simulation</title>
+      <link>https://rokkophysicsclub.github.io/rpc-2023/works/moon_simulation/</link>
+      <pubDate>Thu, 14 Sep 2023 22:45:09 +0900</pubDate>
+      
+      <guid>https://rokkophysicsclub.github.io/rpc-2023/works/moon_simulation/</guid>
+      <description>月の満ち欠け 85th 正位置の愚者 新月から満月までのシュミレーションを作りました 新機能として見たい月の時止められる機能と、朝と昼と夜の三場面を見るこ</description>
+    </item>
+    
+    <item>
+      <title>機械式計算機</title>
+      <link>https://rokkophysicsclub.github.io/rpc-2023/works/irmagazine/</link>
+      <pubDate>Thu, 14 Sep 2023 21:26:03 +0900</pubDate>
+      
+      <guid>https://rokkophysicsclub.github.io/rpc-2023/works/irmagazine/</guid>
+      <description>機械式計算機作ってみた 85th IR 初めに 機械式計算機は、歯車などの機械要素により計算を行う計算機である。(Wikipediaより) つまり機械式の電卓</description>
+    </item>
+    
+    <item>
+      <title>スパコン体験塾2023</title>
+      <link>https://rokkophysicsclub.github.io/rpc-2023/works/cellular_automaton/</link>
+      <pubDate>Wed, 13 Sep 2023 14:47:44 +0900</pubDate>
+      
+      <guid>https://rokkophysicsclub.github.io/rpc-2023/works/cellular_automaton/</guid>
+      <description>83rd 0x4C はじめに 今年の8/22~8/23にかけて開催された、スーパーコンピューター「富岳」を使ってセルオートマトンを計算するというイベントに参加</description>
+    </item>
+    
+    <item>
+      <title>Artworks</title>
+      <link>https://rokkophysicsclub.github.io/rpc-2023/works/artworks/</link>
+      <pubDate>Mon, 11 Sep 2023 22:59:48 +0900</pubDate>
+      
+      <guid>https://rokkophysicsclub.github.io/rpc-2023/works/artworks/</guid>
+      <description>Title:「Particles」by 0x4C Title:「For random」by 0x4C Title:「Incident」by 0x4C #六甲学院物理部202</description>
+    </item>
+    
+    <item>
+      <title>Simple_shooting_on_web</title>
+      <link>https://rokkophysicsclub.github.io/rpc-2023/works/simple_shooting_on_web/</link>
+      <pubDate>Wed, 09 Aug 2023 23:15:28 +0900</pubDate>
+      
+      <guid>https://rokkophysicsclub.github.io/rpc-2023/works/simple_shooting_on_web/</guid>
+      <description>83rd 0x4C 2年ぐらい前にSimple_shootingっていうゲームがありましたよね。 ↓これ 今回は、Simple_shootingをブラウザでプレ</description>
+    </item>
+    
+    <item>
+      <title>Simple_shooting_2.1</title>
+      <link>https://rokkophysicsclub.github.io/rpc-2023/works/simple_shooting_2.1/</link>
+      <pubDate>Wed, 09 Aug 2023 22:47:47 +0900</pubDate>
+      
+      <guid>https://rokkophysicsclub.github.io/rpc-2023/works/simple_shooting_2.1/</guid>
+      <description>83rd 0x4C&amp;kusa51 はじめに 昨年に続き、今年もSimple_shooting_2.1の開発を進めたので新しく実装した内容などについて書こうと思います。 ↓ダウ</description>
+    </item>
+    
     <item>
       <title>Path Tracing</title>
       <link>https://rokkophysicsclub.github.io/rpc-2023/works/pathtracing/</link>

@@ -2,18 +2,53 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://rokkophysicsclub.github.io/rpc-2023/works/</loc>
+    <lastmod>2023-09-17T16:52:23+09:00</lastmod>
+  </url><url>
+    <loc>https://rokkophysicsclub.github.io/rpc-2023/</loc>
+    <lastmod>2023-09-17T16:52:23+09:00</lastmod>
+  </url><url>
+    <loc>https://rokkophysicsclub.github.io/rpc-2023/works/train/</loc>
+    <lastmod>2023-09-17T16:52:23+09:00</lastmod>
+  </url><url>
+    <loc>https://rokkophysicsclub.github.io/rpc-2023/works/tansan/</loc>
+    <lastmod>2023-09-15T21:15:05+09:00</lastmod>
+  </url><url>
+    <loc>https://rokkophysicsclub.github.io/rpc-2023/works/moon_simulation/</loc>
+    <lastmod>2023-09-14T22:45:09+09:00</lastmod>
+  </url><url>
+    <loc>https://rokkophysicsclub.github.io/rpc-2023/works/irmagazine/</loc>
+    <lastmod>2023-09-14T21:26:03+09:00</lastmod>
+  </url><url>
+    <loc>https://rokkophysicsclub.github.io/rpc-2023/works/cellular_automaton/</loc>
+    <lastmod>2023-09-13T14:47:44+09:00</lastmod>
+  </url><url>
+    <loc>https://rokkophysicsclub.github.io/rpc-2023/works/artworks/</loc>
+    <lastmod>2023-09-11T22:59:48+09:00</lastmod>
+  </url><url>
+    <loc>https://rokkophysicsclub.github.io/rpc-2023/works/simple_shooting_on_web/</loc>
+    <lastmod>2023-08-09T23:15:28+09:00</lastmod>
+  </url><url>
+    <loc>https://rokkophysicsclub.github.io/rpc-2023/works/simple_shooting_2.1/</loc>
+    <lastmod>2023-08-09T22:47:47+09:00</lastmod>
+  </url><url>
+    <loc>https://rokkophysicsclub.github.io/rpc-2023/works/pathtracing/</loc>
+    <lastmod>2023-08-09T21:12:53+09:00</lastmod>
+  </url><url>
+    <loc>https://rokkophysicsclub.github.io/rpc-2023/members/</loc>
+    <lastmod>2023-08-09T19:16:42+09:00</lastmod>
+  </url><url>
+    <loc>https://rokkophysicsclub.github.io/rpc-2023/about/</loc>
+    <lastmod>2023-08-09T18:21:02+09:00</lastmod>
+  </url><url>
     <loc>https://rokkophysicsclub.github.io/rpc-2023/links/</loc>
     <lastmod>2023-08-09T17:55:28+09:00</lastmod>
   </url><url>
     <loc>https://rokkophysicsclub.github.io/rpc-2023/welcome/</loc>
     <lastmod>2023-08-09T17:47:07+09:00</lastmod>
   </url><url>
-    <loc>https://rokkophysicsclub.github.io/rpc-2023/afterword/</loc>
-  </url><url>
     <loc>https://rokkophysicsclub.github.io/rpc-2023/categories/</loc>
   </url><url>
     <loc>https://rokkophysicsclub.github.io/rpc-2023/tags/</loc>
-  </url><url>
-    <loc>https://rokkophysicsclub.github.io/rpc-2023/</loc>
   </url>
 </urlset>

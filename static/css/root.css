@@ -1,0 +1,16 @@
+summary {
+  display: list-item !important;
+  cursor: pointer;
+  transition: 0.2s;
+  user-select: none;
+  color:lightcoral;
+}
+
+summary::-webkit-details-marker {
+  display: list-item !important;
+}
+
+summary:hover {
+  cursor: pointer;
+  background-color: #EFEFEF;
+}

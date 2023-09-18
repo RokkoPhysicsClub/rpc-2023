@@ -5,6 +5,7 @@
 <title>六甲学院物理部2023</title>
 <meta name="description" content="六甲学院物理部の2023年度オンライン文化祭非公式サイト">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://rokkophysicsclub.github.io/rpc-2023/css/root.css">
 <link rel="stylesheet" href="https://rokkophysicsclub.github.io/rpc-2023/css/bootstrap.min.css">
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,300,700,400italic">
 <link rel="stylesheet" href="https://rokkophysicsclub.github.io/rpc-2023/css/font-awesome.min.css">
@@ -41,7 +42,15 @@
 
 
 <header>
-<progress id="scroll_progress"></progress>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MVYWYW3M9Z"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-MVYWYW3M9Z');
+  </script>
+<progress id="scroll_progress" style="width: 100vw;"></progress>
 </header></head>
 <body>
   <div id="all">
@@ -149,23 +158,43 @@
 <li>CPU : Intel🄬 core i7 11700</li>
 <li>GPU : NVIDIA GeForce RTX 3060</li>
 <li>RAM : DDR4-3200 48GB</li>
-<li>Java : Java17</li>
+<li>Java : Java20</li>
+<li>OpenGL : OpenGL4.6</li>
 </ul>
 <h2 id="path-tracingの説明">Path Tracingの説明</h2>
 <h3 id="そもそもpath-tracingって何">そもそもPath Tracingって何?</h3>
-<p>Path Tracingというのは、超簡単に言うと光のシミュレーションです。<br>
+<p>Path Tracingというのは<code>Ray Tracing</code>という手法の一種で、超簡単に言うと光のシミュレーションです。<br>
 もう少し厳密に言うと、光を粒子として考えた上で反射/屈折などの光学現象をシミュレートするというものです。
-<img src="../../img/PathTracing/Ray_Trace.jpg" alt="Ray Trace"></p>
+<img src="../../img/PathTracing/Ray_Trace.avif" alt="Ray Trace"></p>
 <h3 id="path-tracingは何が良いのか">Path Tracingは何が良いのか</h3>
-<p>皆さんは1度ぐらいは3Dの綺麗なグラフィックスのゲームをプレイしたり動画を観たりしたことがあると思うのですが、それらは<code>ラスタライズ法</code>という方式で描画されています。<br>
+<p>皆さんは1度ぐらいは3Dの綺麗なグラフィックスのゲームをプレイしたり動画を観たりしたことがあると思うのですが、それらはほぼ全て<code>ラスタライズ法</code>という方式で描画されています。<br>
 <code>ラスタライズ法</code>というのは、キャラクターやオブジェクトなどを画面に投影して、その部分を光の位置を考えて塗りつぶすというものです。<br>
-<img src="../../img/PathTracing/Rasterize.png" alt="ラスタライズ法">
+<img src="../../img/PathTracing/Rasterize.avif" alt="ラスタライズ法">
 この方法は、遮蔽や反射を考えないのでとても高速である反面、間接光や鏡の正確な表現ができません。<br>
 <br>
 一方、<code>Path Tracing</code>では画面のピクセルごとに光線を飛ばし、オブジェクトとの交差判定をとって反射/屈折などを繰り返すことで3Dの世界を描画するというものです。<br>
-<img src="../../img/PathTracing/PT.png" alt="Path Tracing">
+<img src="../../img/PathTracing/PT.avif" alt="Path Tracing">
 この方法は、圧倒的にリアルな表現ができる代わりにとても処理が遅く、ノイズも発生します。</p>
+<h3 id="使用されているもの">使用されているもの</h3>
+<p>現在、Path Tracingは主に映画のようなリアルタイムで計算する必要が無い場面で利用されており、最近では一部のゲームがRay Tracingに対応、そしてほんの一握りのゲームがPath Tracingに対応しています。
+<img src="../../img/PathTracing/PT_Game.avif" alt="Game"></p>
+<h2 id="作ったもの">作ったもの</h2>
+<p>Path Tracingをリアルタイムで実行するゲーム的な何かを作りました。<br>
+W,A,S,Dのキーで動いたりMinecraftのような感覚で視点を操作できます。
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">こちらは文化祭に向けて開発中のリアルタイムパストレーサーです。<br>ノイズが多すぎるので文化祭までには改善したいところ。 <a href="https://t.co/5h23aVqzk8">pic.twitter.com/5h23aVqzk8</a></p>&mdash; 六甲学院物理部 (@RokkoPhysics) <a href="https://twitter.com/RokkoPhysics/status/1697896443879817641?ref_src=twsrc%5Etfw">September 2, 2023</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</p>
 <h2 id="実装">実装</h2>
+<h3 id="レンダリング方程式">レンダリング方程式</h3>
+<p>パストレーシングは、次のような式で表現されます。
+$$ L_o(x,\vec \omega_o)=L_e(x,\vec \omega_o)+\int_\Omega f_s(x,\vec\omega_i,\vec\omega_o)L_i(x,\vec\omega_i)|\vec\omega_i\cdot n|d\omega_i $$
+この中で、$L_o(x,\vec \omega_o)$が出射光、$L_e(x,\vec \omega_o)$が物体自体の発光、$\int_\Omega f_s(x,\vec\omega_i,\vec\omega_o)L_i(x,\vec\omega_i)|\vec\omega_i\cdot n|d\omega_i$が物体表面で反射した光の強さを表します。</p>
+<h3 id="パイプライン">パイプライン</h3>
+<p>レイトレーシングやラスタライズにおいては、GPUが効率的に仕事をこなす為に何をどういった順番で行うのかを決めるパイプラインというものが存在します。<br></p>
+<p><img src="../../img/PathTracing/ShaderPipeline.avif" alt="Game"></p>
+<p>普通はラスタライズ用のパイプラインを使うのですが、今回はレイトレーシングということでレイトレーシング用のパイプラインを<br>
+<strong>使いません。</strong><br>
+今回は全ての処理を自分で書いてみたいと思ったので、ラスタライズ用のパイプラインで強引に実装します。</p>
 <h3 id="光線の発射">光線の発射</h3>
 <p>今皆さんがこの記事を見るのに使っているスマホやらパソコンやらタブレットというものは、全ての画像を
 <strong>「ピクセル」</strong>
@@ -202,7 +231,8 @@
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> ray<span style="color:#f92672">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><h3 id="bsdf">BSDF</h3>
+</span></span></code></pre></div><p>レイトレーシング用のパイプラインを使えばGPUが自動で超高速に交差判定をしてくれるのですが、今回は使わないので自前の実装という形になります。</p>
+<h3 id="bsdf">BSDF</h3>
 <p><code>Path Tracing</code>において物理的に正しい描画をするには、当然物体の材質も物理的に正しい物である必要があります。<br>
 そこで、<code>BSDF(Bidirectional Scattaring Distribution Function,双方向散乱分布関数)</code>というものが必要になります。<br>
 また、<code>BSDF</code>というのは反射の特性を表現する<code>BRDF(Bidirectional Reflectance Distribution Function,双方向反射率分布関数)</code>と透過の特性を表現する<code>BTDF(Bidirectional Transmission Distribution Function,双方向透過率分布関数)</code>の和によって表され、これらは</p>
@@ -225,15 +255,91 @@
 <li>凹凸による遮蔽を計算するG(マスキングシャドウ関数)</li>
 </ul>
 <p>によって構成され、
-$$ \dfrac{F\cdot D\cdot G}{4 (\vec{n}\cdot \vec{w_o}) \cdot (\vec{n}\cdot \vec{w_i}) } $$
+$$ f(x,\omega_o,\omega_i)=\dfrac{F\cdot D\cdot G}{4 (\vec{n}\cdot \vec{w_o}) \cdot (\vec{n}\cdot \vec{w_i}) } $$
 という式で計算することができます。<br>
 <br>
 ↓GGXのテストの画像。背景の都合でノイズが多い。
-<img src="../../img/PathTracing/materials.png" alt="Materials"></p>
+<img src="../../img/PathTracing/materials.avif" alt="Materials"></p>
 <h3 id="背景">背景</h3>
 <p>今回の<code>Path Tracer</code>には背景画像を読み込む機能を実装しています。<br>
 背景画像といえば、皆さんが普段使っている<code>jpeg</code>や<code>png</code>を思い浮かべるかもしれませんが、それらの形式の画像は明るさを0~255の間に切り詰めてしまうので正確な太陽の明るさを表すことができません。なので、Path Tracingにおいては<code>hdri</code>や<code>exr</code>といったより広範囲の明るさを表現できる形式を使います。</p>
-
+<h3 id="bvh">BVH</h3>
+<p>ポリゴンとの交差判定の処理は、ポリゴンの数が少ないときには何ともないのですが、流石に10,000ポリゴンのような大量のポリゴンでできたシーンをレンダリングするようになると大幅に速度が低下します。<br>
+なので、<code>BVH(Bounding Volume Hierarchy)</code>というデータ構造を利用して交差判定の高速化を図ります。<br></p>
+<blockquote>
+<p><img src="../../img/PathTracing/bvh_ex.avif" alt="BVH">
+<a href="https://developer.nvidia.com/blog/thinking-parallel-part-ii-tree-traversal-gpu/">https://developer.nvidia.com/blog/thinking-parallel-part-ii-tree-traversal-gpu/</a> より引用</p>
+</blockquote>
+<p>BVHの作り方としては、すべてのポリゴンを<code>SAH(Surface Area Heuristics)</code>という関数で計算したコストが最小になる組み合わせで2つにグループ分けするということを繰り返します。<br>
+ただ、SAHが最小になるグループを素直に探すと時間がかかるので、<code>Binning</code>という、分割したいグループにすっぽりと被さるバウンディングボックスの最長辺の軸に沿ってグループ内のポリゴンをソートし、事前に決めた分割数の数のグループにポリゴンを均等に分け、その中からSAHが最小になるグループを見つけ出す手法を使うことによって、グループの探索を分割数の数にまで減らすことができます。<br>
+今回は部誌の執筆時点では有効化していませんが、展示するときには多分有効化していると思います。<br>
+ちなみに、今回のパストレーサーでは超高速なハードウェアが使えないので距離で非表示にするなどの最適化をしています。</p>
+<h3 id="nee">NEE</h3>
+<p>Path Tracingにおいては、光源にレイが当たらないと色を計算できないので、無理やり光源とレイをつなげようという<code>NEE(Next Event Estimination)</code>という名前の手法があります。<br>
+今回のパストレーサーでは時間が足りず実装できませんでした。<br>
+気が向いたら実装するかもしれません。</p>
+<h3 id="デノイズ">デノイズ</h3>
+<p>最初のほうで触れた通り、Path Tracingではノイズが発生します。<br>
+しかし、リアルタイムで動かすにはいちいち何回もサンプリングしている暇はありません。<br>
+なので、どうにかしてノイズのある画像からノイズを取り除く必要があります。<br>
+そこで出てくるのが<code>SVGF(Spatiotemporal Variance-Guided Filtering)</code>という手法です。</p>
+<blockquote>
+<p><img src="../../img/PathTracing/SVGF_ex.avif" alt="SVGF">
+<a href="https://qiita.com/shocker-0x15/items/f928898730498c7a52c7">https://qiita.com/shocker-0x15/items/f928898730498c7a52c7</a> より引用</p>
+</blockquote>
+<p>具体的にSVGFでは何をするのかというと、物体の本来の色や光の強さなどの情報からピクセルごとのノイズによる分散を推定し、推定した分散に従って範囲に気をつけつつ画像をぼかすことでノイズを大幅に減らします。<br>
+このとき、過去のフレームの情報を再利用することによって実質的なサンプル数を稼いだり、時間軸においての一貫性を持たせることができるようになります。<br>
+部誌の執筆時にはまだ実装していませんが、本番までにはフレームの再利用以外は実装しているかもしれません。</p>
+<h2 id="gallery">Gallery</h2>
+<p>部誌の執筆時での画像たちです。
+<img src="../../img/PathTracing/PathTracing_title.avif" alt="Main_Scene">
+<img src="../../img/PathTracing/Dragon.avif" alt="Dragon">
+<img src="../../img/PathTracing/Entrance.avif" alt="Entrance"></p>
+<h2 id="最後に">最後に</h2>
+<p>前々からパストレーサーを作りたいと思っていたものの、なかなかハードルが高くて実装までは至らなかったのですが、<del>中間試験真っただ中に勉強をサボって</del>原型となる単純な仕組みだけのレイトレーサーを実装してみたらそれを拡張することで案外すんなりと実装できました。(ただし普通に難しかった)<br>
+やっぱり思い切りって大事なんだと思います。<br>
+取り敢えず、OpenGLでリアルタイムを実現する難易度が高すぎたので、これに懲りて次からはOptiXとかVulkanを使って実装すると思います。</p>
+<h2 id="あとがき">あとがき</h2>
+<p>Path Tracingに興味がある人のために色々調べたことを載せておきます。(間違ってたらすいません)</p>
+<ul>
+<li><code>MIS(Multiple Importance Sampling)</code>
+<ul>
+<li>NEEとPath Tracingをうまい具合に混ぜて使うことでノイズを減らす</li>
+</ul>
+</li>
+<li><code>双方向パストレーシング</code>
+<ul>
+<li>カメラからだけでなく光源からも光線を発射し、それらを繋ぐことで集光模様をサンプリングできるようになる。</li>
+</ul>
+</li>
+<li><code>MNEE(Manifold NEE)</code>
+<ul>
+<li>集光模様(コースティクス)でもNEEを使えるようにした改良型NEE</li>
+</ul>
+</li>
+<li><code>SMS(Specular Manifold Sampling)</code>
+<ul>
+<li>MNEEでもノイズを減らすのが難しい高周波コースティクスもきれいにサンプリングできる手法。RISを使ってる?</li>
+</ul>
+</li>
+<li><code>RIS(Resampled Importance Sampling)</code>
+<ul>
+<li>目標のPDFに近い分布でサンプリングできる。結構重要。</li>
+</ul>
+</li>
+<li><code>ReSTIR(Path Resampling for Real-Time Path Tracing)</code>
+<ul>
+<li>リアルタイム用のパストレーシングアルゴリズム。パスを再利用して実質的なサンプル数を大幅に増やす。</li>
+</ul>
+</li>
+<li><code>ReGIR</code>
+<ul>
+<li>ReSTIRをグリッドベースで放射輝度などを保存することで2次反射以降でもパスの再利用をできるようにしたもの(だった気がする)。Ray Tracing GemsⅡに掲載されている。</li>
+</ul>
+</li>
+</ul>
+<br>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-hashtags="六甲学院物理部2023" data-lang="ja" data-show-count="false">#六甲学院物理部2023 でポスト</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
          
       </div>
     </div>
