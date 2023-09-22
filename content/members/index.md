@@ -5,11 +5,10 @@ draft: false
 ---
 
 ## 部員の紹介
-現在の物理部の部員を紹介するページです。
+部誌を書いた部員を紹介するページです。
 
 ### 83rd kusa51(部長)
 物理部無職<br>
-* 𝕏(Twitter):[**Reitha**](https://twitter.com/kusq51)
 
 <br>
 
@@ -29,13 +28,29 @@ draft: false
 
 <br>
 
+### 83rd Y
+
+<br>
+
 ### 85th IR
 物理部3Dプリンターの守護者です。<br>
+
+<br>
+
+### 85th K_K
 
 <br>
 
 ### 85th 正位置の愚者
 
  - Youtube: [**css and html javascript,**](https://www.youtube.com/channel/UC9T5lGjW3hEI-sFaMD6kI-w)
+
+<br>
+
+### 85th T
+
+<br>
+
+### 85th hand
 
 <br>

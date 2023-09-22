@@ -18,7 +18,7 @@ draft: false
 
 ## 阪急神戸線各駅発車案内
 
-{{< link-card-complete "https://onl.bz/fX9GAiL" "阪急神戸線各駅発車案内" "../img/train/Train_home_min.avif" "阪急の時刻表サイト">}}
+{{< link-card-complete "https://onl.bz/fX9GAiL" "阪急神戸線各駅発車案内" "../img/train/Train_QR.png" "阪急の時刻表サイト">}}
 <br>
 
 ## Moon Simulation
