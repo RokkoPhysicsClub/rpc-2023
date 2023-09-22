@@ -164,8 +164,8 @@
 <h2 id="path-tracingの説明">Path Tracingの説明</h2>
 <h3 id="そもそもpath-tracingって何">そもそもPath Tracingって何?</h3>
 <p>Path Tracingというのは<code>Ray Tracing</code>という手法の一種で、超簡単に言うと光のシミュレーションです。<br>
-もう少し厳密に言うと、光を粒子として考えた上で反射/屈折などの光学現象をシミュレートするというものです。
-<img src="../../img/PathTracing/Ray_Trace.avif" alt="Ray Trace"></p>
+もう少し厳密に言うと、光を粒子として考えた上で反射/屈折などの光学現象をシミュレートするというものです。</p>
+<p><img src="../../img/PathTracing/Ray_Trace.avif" alt="Ray Trace"></p>
 <h3 id="path-tracingは何が良いのか">Path Tracingは何が良いのか</h3>
 <p>皆さんは1度ぐらいは3Dの綺麗なグラフィックスのゲームをプレイしたり動画を観たりしたことがあると思うのですが、それらはほぼ全て<code>ラスタライズ法</code>という方式で描画されています。<br>
 <code>ラスタライズ法</code>というのは、キャラクターやオブジェクトなどを画面に投影して、その部分を光の位置を考えて塗りつぶすというものです。<br>
@@ -275,7 +275,7 @@ $$ f(x,\omega_o,\omega_i)=\dfrac{F\cdot D\cdot G}{4 (\vec{n}\cdot \vec{w_o}) \cd
 今回は部誌の執筆時点では有効化していませんが、展示するときには多分有効化していると思います。<br>
 ちなみに、今回のパストレーサーでは超高速なハードウェアが使えないので距離で非表示にするなどの最適化をしています。</p>
 <h3 id="nee">NEE</h3>
-<p>Path Tracingにおいては、光源にレイが当たらないと色を計算できないので、無理やり光源とレイをつなげようという<code>NEE(Next Event Estimination)</code>という名前の手法があります。<br>
+<p>Path Tracingにおいては、光源にレイが当たらないと色を計算できないので、無理やり光源とレイをつなげようという<code>NEE(Next Event Estimation)</code>という名前の手法があります。<br>
 今回のパストレーサーでは時間が足りず実装できませんでした。<br>
 気が向いたら実装するかもしれません。</p>
 <h3 id="デノイズ">デノイズ</h3>
