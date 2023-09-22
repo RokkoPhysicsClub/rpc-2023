@@ -6,7 +6,34 @@
     <description>Recent content in Works on 六甲学院物理部2023</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 17 Sep 2023 16:52:23 +0900</lastBuildDate><atom:link href="https://rokkophysicsclub.github.io/rpc-2023/works/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Sep 2023 16:04:59 +0900</lastBuildDate><atom:link href="https://rokkophysicsclub.github.io/rpc-2023/works/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rectangle</title>
+      <link>https://rokkophysicsclub.github.io/rpc-2023/works/rectangle/</link>
+      <pubDate>Wed, 20 Sep 2023 16:04:59 +0900</pubDate>
+      
+      <guid>https://rokkophysicsclub.github.io/rpc-2023/works/rectangle/</guid>
+      <description>83rd Y 概要 図形が多くいたってシンプルなアクションゲームです。 操作キャラは四角のキャラで、（十字の上で）赤く光りながらジャンプ、 （十字の下で）黄</description>
+    </item>
+    
+    <item>
+      <title>blenderを利用した人の動きのアニメーション</title>
+      <link>https://rokkophysicsclub.github.io/rpc-2023/works/animation/</link>
+      <pubDate>Tue, 19 Sep 2023 21:08:53 +0900</pubDate>
+      
+      <guid>https://rokkophysicsclub.github.io/rpc-2023/works/animation/</guid>
+      <description>85th K_K どのようにして作ったのか 今回展示している人の動きのアニメーションは、blenderというソフトのアニメーションという機能を使ってやりまし</description>
+    </item>
+    
+    <item>
+      <title>プログラムと避けゲー</title>
+      <link>https://rokkophysicsclub.github.io/rpc-2023/works/avoid/</link>
+      <pubDate>Tue, 19 Sep 2023 20:30:43 +0900</pubDate>
+      
+      <guid>https://rokkophysicsclub.github.io/rpc-2023/works/avoid/</guid>
+      <description>85th T&amp;hand ゲームの動かし方とゲームの変更について 素人なりにプログラミングの面白さを伝えたいと思い、みなさん自身がプログラムを書き換えることでゲーム</description>
+    </item>
+    
     <item>
       <title>阪急神戸線各駅発車案内</title>
       <link>https://rokkophysicsclub.github.io/rpc-2023/works/train/</link>

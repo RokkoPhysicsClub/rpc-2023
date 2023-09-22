@@ -24,6 +24,7 @@ draft: false
 ### そもそもPath Tracingって何?
 Path Tracingというのは`Ray Tracing`という手法の一種で、超簡単に言うと光のシミュレーションです。<br>
 もう少し厳密に言うと、光を粒子として考えた上で反射/屈折などの光学現象をシミュレートするというものです。
+
 ![Ray Trace](../../img/PathTracing/Ray_Trace.avif)
 
 ### Path Tracingは何が良いのか
@@ -143,7 +144,7 @@ BVHの作り方としては、すべてのポリゴンを`SAH(Surface Area Heuri
 ちなみに、今回のパストレーサーでは超高速なハードウェアが使えないので距離で非表示にするなどの最適化をしています。
 
 ### NEE
-Path Tracingにおいては、光源にレイが当たらないと色を計算できないので、無理やり光源とレイをつなげようという`NEE(Next Event Estimination)`という名前の手法があります。<br>
+Path Tracingにおいては、光源にレイが当たらないと色を計算できないので、無理やり光源とレイをつなげようという`NEE(Next Event Estimation)`という名前の手法があります。<br>
 今回のパストレーサーでは時間が足りず実装できませんでした。<br>
 気が向いたら実装するかもしれません。
 

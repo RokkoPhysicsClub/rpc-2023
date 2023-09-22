@@ -6,7 +6,34 @@
     <description>Recent content on 六甲学院物理部2023</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 17 Sep 2023 16:52:23 +0900</lastBuildDate><atom:link href="https://rokkophysicsclub.github.io/rpc-2023/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Sep 2023 16:04:59 +0900</lastBuildDate><atom:link href="https://rokkophysicsclub.github.io/rpc-2023/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rectangle</title>
+      <link>https://rokkophysicsclub.github.io/rpc-2023/works/rectangle/</link>
+      <pubDate>Wed, 20 Sep 2023 16:04:59 +0900</pubDate>
+      
+      <guid>https://rokkophysicsclub.github.io/rpc-2023/works/rectangle/</guid>
+      <description>83rd Y 概要 図形が多くいたってシンプルなアクションゲームです。 操作キャラは四角のキャラで、（十字の上で）赤く光りながらジャンプ、 （十字の下で）黄</description>
+    </item>
+    
+    <item>
+      <title>blenderを利用した人の動きのアニメーション</title>
+      <link>https://rokkophysicsclub.github.io/rpc-2023/works/animation/</link>
+      <pubDate>Tue, 19 Sep 2023 21:08:53 +0900</pubDate>
+      
+      <guid>https://rokkophysicsclub.github.io/rpc-2023/works/animation/</guid>
+      <description>85th K_K どのようにして作ったのか 今回展示している人の動きのアニメーションは、blenderというソフトのアニメーションという機能を使ってやりまし</description>
+    </item>
+    
+    <item>
+      <title>プログラムと避けゲー</title>
+      <link>https://rokkophysicsclub.github.io/rpc-2023/works/avoid/</link>
+      <pubDate>Tue, 19 Sep 2023 20:30:43 +0900</pubDate>
+      
+      <guid>https://rokkophysicsclub.github.io/rpc-2023/works/avoid/</guid>
+      <description>85th T&amp;hand ゲームの動かし方とゲームの変更について 素人なりにプログラミングの面白さを伝えたいと思い、みなさん自身がプログラムを書き換えることでゲーム</description>
+    </item>
+    
     <item>
       <title>阪急神戸線各駅発車案内</title>
       <link>https://rokkophysicsclub.github.io/rpc-2023/works/train/</link>
@@ -62,6 +89,15 @@
     </item>
     
     <item>
+      <title>Afterword</title>
+      <link>https://rokkophysicsclub.github.io/rpc-2023/afterword/</link>
+      <pubDate>Mon, 11 Sep 2023 21:49:46 +0900</pubDate>
+      
+      <guid>https://rokkophysicsclub.github.io/rpc-2023/afterword/</guid>
+      <description>Coming Soon&amp;hellip; </description>
+    </item>
+    
+    <item>
       <title>Simple_shooting_on_web</title>
       <link>https://rokkophysicsclub.github.io/rpc-2023/works/simple_shooting_on_web/</link>
       <pubDate>Wed, 09 Aug 2023 23:15:28 +0900</pubDate>
@@ -94,7 +130,7 @@
       <pubDate>Wed, 09 Aug 2023 19:16:42 +0900</pubDate>
       
       <guid>https://rokkophysicsclub.github.io/rpc-2023/members/</guid>
-      <description>部員の紹介 現在の物理部の部員を紹介するページです。 83rd kusa51(部長) 物理部無職 𝕏(Twitter):Reitha 83rd 0x4C(副部長) レン</description>
+      <description>部員の紹介 部誌を書いた部員を紹介するページです。 83rd kusa51(部長) 物理部無職 83rd 0x4C(副部長) レンダリングが大好きな人。 最近はパストレ</description>
     </item>
     
     <item>
@@ -121,7 +157,7 @@
       <pubDate>Wed, 09 Aug 2023 17:47:07 +0900</pubDate>
       
       <guid>https://rokkophysicsclub.github.io/rpc-2023/welcome/</guid>
-      <description>六甲学院物理部 2023年度文化祭ホームページへようこそ enter your text here 部長 83期 kusa51 部誌 今年のホームページでは、気になる内容について研究している部員に</description>
+      <description>六甲学院物理部 2023年度文化祭ホームページへようこそ 六甲学院物理部2023年文化祭ホームページをご覧いただきありがとうございます。 昨年度の</description>
     </item>
     
   </channel>
