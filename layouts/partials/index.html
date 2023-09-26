@@ -1,0 +1,7 @@
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"> 
+    {{ range .Site.Params.navlinks }}
+    {{ if .home }}
+    <meta http-equiv="refresh" content="0; URL={{ .url | absURL }}" />
+    {{ end }}
+    {{ end }}
+  </head>
